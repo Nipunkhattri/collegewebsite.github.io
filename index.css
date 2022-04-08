@@ -8,6 +8,8 @@ body{
 .navbar{
     background-color: black !important;
     height: 70px ;
+    /* z-index: 1; */
+    /* border: 3px solid red; */
 }
 
 .navbar-nav{
@@ -19,11 +21,13 @@ body{
     font-size: 50px;
     color: blanchedalmond;
 }
-
+.bd-example{
+    /* z-index: 1; */
+    /* border: 2px solid red; */
+}
 p{
     margin-bottom: 0rem;
     font-size: 22px;
-    /* border: 2px solid red; */
     color: black;
 }
 .d-md-block{
@@ -37,6 +41,7 @@ p{
     color: burlywood;
     font-size: 23px;
 }
+
 /* ----------------------------------marketing------------------------------ */
 .image{
     border-radius: 13px;
@@ -47,7 +52,7 @@ p{
 }
 
 .subject{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: 500px;
     border-radius: 30px;
 }
@@ -283,15 +288,15 @@ b, strong {
 }
 
 
-.form{
-    /* border: 2px solid red; */
-    height: 500px;
-}
+/*.form{
+    /* border: 2px solid red; 
+    height: 570px;
+}*/
 .foc{
     background-color: black;
     color: white;
-    height: 60px;
-    /* border: 2px solid black; */
+    /* height: 100px; */
+    /* border: 2px solid blue; */
 }
 
 
@@ -301,9 +306,10 @@ b, strong {
     height: 730px;
     margin-top: 70px;
     margin-left: 180px;
-    margin-right: 15px;
+    margin-right: 15px; 
     width: 98%;
     /* display: flex; */
+    justify-content: space-between;
 }
 
 .announcement{
@@ -367,14 +373,93 @@ b, strong {
     border: 2px solid black;
     height: 80px;
     padding: 1px 1px;
-    /* border: 2px solid red; */
 }
+/* --------------------------------------------media query-------------------------------------- */
+@media(min-width:992px){
 
+}
+@media(min-width:768px)and(max-width:991px){
 
-@media(max-width:479px){
+}
+@media(min-width:575px)and(max-width:767px){
+    
+}
+@media(min-width:480px) and (max-width:574px){
+
+    hr{
+        width: 530px;
+        margin-left: 10px;
+    }
+     .navbar{
+        /* border: 3px solid red !important; */
+        /* background-color: aliceblue !important;  */
+        /* width: 700px;  */
+     }
+    .carousel-inner{
+        /* border: 2px solid red; */
+        width: 650px;
+    }  
+    
     .marketing{
-        /* border: 2px solid black; */
-        height: 1700px;
+        height:1700px;
+        border-radius: 30px;
+        /* border: 2px solid red;  */
+        /* justify-content: center; */
+        margin-left: 90px;
+        /* width: 100%;  */
+    }
+    .jss{
+        height: 900px;
+        /* border: 2px solid red; */
+        margin-left: 90px;
+    }
+    .trainannounce{
+        height: 2000px;
+        width: 600px;
+        /* border: 2px solid red;  */
+        margin-left: 0px;
+    }
+    
+    .latest{
+        width: 500px;
+        margin-left: 100px;
+    }
+    
+    .announcement{
+        width: 500px !important;
+        /* height: 500px; */
+        /* border: 2px solid red;*/ 
+        margin-left: 100px;
+    }
+    .training{
+        width: 500px;
+        margin-left: 100px;
+        /* height: 1100px; */
+    } 
+    .hightlight-part
+    {
+        /* border: 2px solid red; */
+        width: 645px;
+    }
+    .ftco-footer{
+        height: 800px;
+        margin-left:100px ;
+    }
+    .form{
+        /* border: 2px solid red; */
+        width: 620px;
+        margin-left: 20px;
+    }
+    .foc{
+        width: 640px;
+    }
+
+
+}
+@media(max-width:479px){
+
+    .marketing{
+        height:1700px;
         border-radius: 30px;
     }
     .jss{
@@ -387,15 +472,22 @@ b, strong {
         margin-left: 0px;
     }
     .latest{
-        width: 500px;
+        width: 480px;
+        margin-left: 5px;
+        margin-bottom: 7px;
     }
     .announcement{
-        width: 500px;
+        /* border: 2px solid black; */
+        margin-left: 5px;
+        width: 480px;
+        margin-bottom: 7px;
     }
     .training{
+        margin-bottom: 7px;
         width: 380px;
+        margin-left: 5px;
         /* border: 2px solid red; */
-        height: 1100px;
+        height: 800px;
     }
     /* .container1{
         height: 1860px !important;
@@ -426,6 +518,16 @@ b, strong {
         width: 355px !important;
         margin: auto;
     } */
+    .form{
+        /* border: 2px solid red; */
+        height: 500px;
+    }
+    .foc{
+        /* border: 2px solid blue; */
+        height: 60px;
+        /* margin-bottom: 25px; */
+        /* margin-top: 0px; */
+    }
 }
 
 
